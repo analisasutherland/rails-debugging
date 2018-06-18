@@ -19,7 +19,7 @@ class EventEditor
 
     if event.draft?
       result.notice = 'Draft saved!'
-      result.render = :index
+      result.render = :edit
     elsif event.published?
       result.notice = 'Event was successfully created.'
     else
